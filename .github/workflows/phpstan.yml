@@ -1,0 +1,46 @@
+name: PHPStan
+
+on:
+  push:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+      - '.github/workflows/phpstan.yml'
+  pull_request:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+      - '.github/workflows/phpstan.yml'
+
+jobs:
+  phpstan:
+    name: phpstan
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: ModulusComposer
+    steps:
+      - name: Checkout ModulusComposer
+        uses: actions/checkout@v7
+        with:
+          path: ModulusComposer
+
+      - name: Checkout Modulus (path repository sibling)
+        uses: actions/checkout@v7
+        with:
+          repository: InEngine/Modulus
+          ref: feat/modulus-state-store
+          path: Modulus
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          coverage: none
+
+      - name: Install composer dependencies
+        run: composer update --prefer-stable --prefer-dist --no-interaction
+
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan analyse --memory-limit=512M --error-format=github

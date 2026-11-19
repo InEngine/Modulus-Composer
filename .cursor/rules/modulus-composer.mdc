@@ -1,0 +1,13 @@
+---
+description: Conventions for inengine/modulus-composer (Composer client extension)
+alwaysApply: true
+---
+
+# ModulusComposer
+
+- Extension package (`inengine/modulus-*`), not a feature module — always-on when installed.
+- Own all Composer require/remove/update and constraint rewrites; never put Composer shelling in `inengine/modulus`.
+- Install ≠ enable: require → discover + publish; enable only with explicit `--enable` / `modulus:enable`.
+- Forget Modulus state **before** `composer remove`.
+- Default constraint policy stays host `modulus.upgrades.default_constraint` (`patch` → `~x.y.z`).
+- Prefer PHPDoc; update CHANGELOG on behavior changes; Pest + PHPStan + Pint green before commit.
