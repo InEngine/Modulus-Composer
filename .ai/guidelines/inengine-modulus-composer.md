@@ -1,6 +1,6 @@
-# InEngine ModulusComposer (package repo)
+# Modulus Composer (package repo)
 
-This repository is `inengine/modulus-composer` (Spatie package + Orchestra Testbench), not a full Laravel app.
+Display name **Modulus Composer**. Composer package `inengine/modulus-composer` (Spatie package + Orchestra Testbench), not a full Laravel app.
 
 ## Commands
 

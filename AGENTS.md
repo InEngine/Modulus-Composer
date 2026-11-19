@@ -1,6 +1,6 @@
-# InEngine ModulusComposer
+# Modulus Composer
 
-Composer package `inengine/modulus-composer` — optional Modulus **extension** for Composer I/O (PHP ^8.5, illuminate/contracts ^12||^13).
+Display name **Modulus Composer**. Composer package `inengine/modulus-composer` — optional Modulus **extension** for Composer I/O (PHP ^8.5, illuminate/contracts ^12||^13).
 
 Depends on `inengine/modulus`. Hosts opt in; Core must **not** hard-require this package.
 

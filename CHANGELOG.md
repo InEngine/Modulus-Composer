@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `inengine/modulus-composer` will be documented in this file.
+All notable changes to **Modulus Composer** (`inengine/modulus-composer`) will be documented in this file.
 
 ## Unreleased
 

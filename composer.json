@@ -1,6 +1,6 @@
 {
     "name": "inengine/modulus-composer",
-    "description": "Composer client for InEngine Modulus (require/remove/update, constraint rewrite, ModuleUpdateApplier)",
+    "description": "Modulus Composer — Composer client for InEngine Modulus (require/remove/update, constraint rewrite, ModuleUpdateApplier)",
     "keywords": [
         "InEngine",
         "laravel",

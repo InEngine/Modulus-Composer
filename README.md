@@ -1,8 +1,15 @@
-# InEngine ModulusComposer
+# Modulus Composer
 
-Composer client extension for [`inengine/modulus`](https://github.com/InEngine/Modulus). Owns **require / remove / update**, host constraint rewrites (`~x.y.z` by default), and the real `ModuleUpdateApplier` so `modulus:update --auto` can apply patches.
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/InEngine/ModulusComposer/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/InEngine/ModulusComposer/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-**Not** a feature module — always-on when installed. Core hosts should **not** hard-require this package; opt in via Composer (path / Packagist).
+**Modulus Composer** (`inengine/modulus-composer`) is the Composer client extension for [Modulus](https://github.com/InEngine/Modulus).
+
+It owns **require / remove / update**, host constraint rewrites (default `~x.y.z`), and the real `ModuleUpdateApplier` so `modulus:update --auto` can apply patches. Modulus core stays free of Composer shelling.
+
+**Not** a feature module — always-on when installed. Hosts (including InEngine Core) should **not** hard-require this package; opt in via Composer path / Packagist.
+
+Docs live with Modulus: [Modulus Composer](https://inengine.github.io/Modulus/modulus-composer) · [repo docs/](https://github.com/InEngine/Modulus/tree/feat/modulus-state-store/docs).
 
 ## Install ≠ enable
 
@@ -24,7 +31,7 @@ Use `--enable` only when you intentionally want enable in the same step.
 | `modulus-composer:update {package?}` | `composer update` + Modulus upgrade/publish |
 | `modulus-composer:approve {package} {version}` | Rewrite constraint under policy, update, upgrade |
 
-Private Packagist / Satis / VCS: configure Composer `repositories` + `auth.json` as usual. This package shells the `composer` binary; it does not store credentials.
+Private Packagist / Satis / VCS: configure Composer `repositories` + `auth.json` as usual. Modulus Composer shells the `composer` binary; it does not store credentials.
 
 ## Constraint policy
 
@@ -49,3 +56,7 @@ composer test
 composer analyse
 composer format
 ```
+
+## License
+
+CC BY-NC-SA 4.0. See [LICENSE.txt](LICENSE.txt).

@@ -1,6 +1,6 @@
 <?php
 
-// config for InEngine/ModulusComposer
+// config for Modulus Composer (inengine/modulus-composer)
 return [
 
     /*
