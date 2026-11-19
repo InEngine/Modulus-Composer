@@ -9,7 +9,7 @@ It owns **require / remove / update**, host constraint rewrites (default `~x.y.z
 
 **Not** a feature module — always-on when installed. Hosts (including InEngine Core) should **not** hard-require this package; opt in via Composer path / Packagist.
 
-Docs live with Modulus: [Modulus Composer](https://inengine.github.io/Modulus/modulus-composer) · [repo docs/](https://github.com/InEngine/Modulus/tree/feat/modulus-state-store/docs).
+Docs live with Modulus: [Modulus Composer](https://github.com/InEngine/Modulus/blob/feat/modulus-state-store/docs/modulus-composer.md) · [docs/](https://github.com/InEngine/Modulus/tree/feat/modulus-state-store/docs).
 
 ## Install ≠ enable
 
