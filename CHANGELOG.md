@@ -4,6 +4,10 @@ All notable changes to **Modulus Composer** (`inengine/modulus-composer`) will b
 
 ## Unreleased
 
+### Changed
+
+- Relicense as MIT
+
 ### Step 10 (initial)
 
 - `ComposerModuleClient` for require / remove / update / approve

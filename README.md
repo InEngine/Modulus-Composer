@@ -1,7 +1,7 @@
 # Modulus Composer
 
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/InEngine/ModulusComposer/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/InEngine/ModulusComposer/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
 
 **Modulus Composer** (`inengine/modulus-composer`) is the Composer client extension for [Modulus](https://github.com/InEngine/Modulus).
 
@@ -59,4 +59,4 @@ composer format
 
 ## License
 
-CC BY-NC-SA 4.0. See [LICENSE.txt](LICENSE.txt).
+The MIT License (MIT). See [LICENSE.txt](LICENSE.txt).
