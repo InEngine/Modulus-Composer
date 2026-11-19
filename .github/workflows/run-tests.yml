@@ -52,9 +52,9 @@ jobs:
         uses: actions/checkout@v7
         with:
           repository: InEngine/Modulus
-          ref: feat/modulus-state-store
+          ref: main
           path: Modulus
-          # Default GITHUB_TOKEN cannot read other private org repos.
+          # Private sibling checkout; public repos can use GITHUB_TOKEN.
           token: ${{ secrets.INENGINE_CI_TOKEN }}
 
       - name: Setup PHP
@@ -68,6 +68,11 @@ jobs:
         run: |
           echo "::add-matcher::${{ runner.tool_cache }}/php.json"
           echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+
+      - name: Enable path Modulus for CI
+        run: |
+          composer config repositories.modulus '{"type":"path","url":"../Modulus","options":{"symlink":true}}'
+          cp composer.local.dist.json composer.local.json
 
       - name: Install dependencies
         run: |

@@ -39,15 +39,24 @@ Uses `modulus.upgrades.default_constraint` (default **patch** → `~x.y.z`). Min
 
 ## Local path (monorepo)
 
+Published package requires `inengine/modulus` `^0.1` (Packagist). For sibling path develop:
+
+```bash
+cp composer.local.dist.json composer.local.json   # gitignored; path + *@dev
+composer update inengine/modulus
+```
+
+Hosts opting into this package via Core:
+
 ```json
 {
   "require": {
-    "inengine/modulus-composer": "*@dev"
+    "inengine/modulus-composer": "^0.1"
   }
 }
 ```
 
-With Core `composer.local.json` path repos under `../Modules/*`.
+Or `*@dev` with Core `composer.local.json` path repos under `../Modules/*`.
 
 ## Quality
 

@@ -1,5 +1,6 @@
 # Composer Related
 composer.lock
+composer.local.json
 /vendor
 
 # Frontend Assets
