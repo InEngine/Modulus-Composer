@@ -3,11 +3,11 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/InEngine/ModulusComposer/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/InEngine/ModulusComposer/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
 
-**Modulus Composer** (`inengine/modulus-composer`) is the Composer client extension for [Modulus](https://github.com/InEngine/Modulus).
+**Modulus Composer** (`inengine/modulus-composer`) is the Composer client extension for [Modulus](https://github.com/InEngine/Modulus). **Step 10 — done.** License: **MIT**.
 
 It owns **require / remove / update**, host constraint rewrites (default `~x.y.z`), and the real `ModuleUpdateApplier` so `modulus:update --auto` can apply patches. Modulus core stays free of Composer shelling.
 
-**Not** a feature module — always-on when installed. Hosts (including InEngine Core) should **not** hard-require this package; opt in via Composer path / Packagist.
+**Not** a feature module — always-on when installed. Hosts (including InEngine Core) should **not** hard-require this package; opt in via Composer path / Packagist. Operator UI is **`modulus-ui` (private Pro)** — separate package.
 
 Docs live with Modulus: [Modulus Composer](https://github.com/InEngine/Modulus/blob/feat/modulus-state-store/docs/modulus-composer.md) · [docs/](https://github.com/InEngine/Modulus/tree/feat/modulus-state-store/docs).
 

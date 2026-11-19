@@ -6,9 +6,16 @@ Use this file so new chats pick up **package work**, **branch focus**, and **nex
 
 <!-- SESSION_LOG_START -->
 
+### 2026-11-19 — Step 10 complete; MIT; ready to leave alone for 11/13
+
+- **Branch:** `main`
+- **Done:** Step **10** Composer client shipped (require/remove/update/approve, constraint rewrite, `ModuleUpdateApplier`, hooks). **MIT**. Display name **Modulus Composer**. CI green. Docs in Modulus `docs/modulus-composer.md`.
+- **Next:** Platform moves to Step **11** / **13**. Optional later: Core path opt-in require; Composer Plugin hooks; marketplace. **`modulus-ui` is private Pro** (separate package — not this repo).
+- **Open questions:** None blocking Step 10.
+
 ### 2026-11-19 — Step 10 scaffold
 
 - **Branch:** `main`
-- **Done:** Composer client + constraint rewriter + `ComposerModuleUpdateApplier` + Artisan require/remove/update/approve; hooks discover/publish/forget; PHPStorm content root on Core. Pest **10** + PHPStan + Pint green. GitHub https://github.com/InEngine/ModulusComposer.
-- **Next:** Optional Core path opt-in `require`; push initial commit if not yet; marketplace/UI later.
+- **Done:** Composer client + constraint rewriter + `ComposerModuleUpdateApplier` + Artisan require/remove/update/approve; hooks discover/publish/forget; PHPStorm content root on Core. Pest + PHPStan + Pint green. GitHub https://github.com/InEngine/ModulusComposer.
+- **Next:** *(Superseded — Step 10 complete; see newer entry.)*
 - **Open questions:** Composer Plugin hooks deferred; private Packagist via auth.json only.
