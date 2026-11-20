@@ -7,7 +7,7 @@ All notable changes to **Modulus Composer** (`inengine/modulus-composer`) will b
 ### Changed
 
 - Relicense as MIT
-- Packagist-ready: require `inengine/modulus` `^0.1`; path develop via gitignored `composer.local.json` (no path repos in published `composer.json`)
+- Packagist-ready shape: path develop via gitignored `composer.local.json` (no path repos in published `composer.json`); require `inengine/modulus` `*@dev` until Packagist release
 
 ### Step 10 (initial)
 

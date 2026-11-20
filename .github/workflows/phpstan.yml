@@ -32,7 +32,6 @@ jobs:
           repository: InEngine/Modulus
           ref: main
           path: Modulus
-          token: ${{ secrets.INENGINE_CI_TOKEN }}
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -43,7 +42,6 @@ jobs:
       - name: Enable path Modulus for CI
         run: |
           composer config repositories.modulus '{"type":"path","url":"../Modulus","options":{"symlink":true}}'
-          cp composer.local.dist.json composer.local.json
 
       - name: Install composer dependencies
         run: composer update --prefer-stable --prefer-dist --no-interaction
