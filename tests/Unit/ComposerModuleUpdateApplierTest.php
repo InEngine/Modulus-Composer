@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Unit coverage for {@see \InEngine\ModulusComposer\Updates\ComposerModuleUpdateApplier}.
+ * Unit coverage for {@see ComposerModuleUpdateApplier}.
  */
 
 use InEngine\Modulus\DataTransferObjects\AvailableModuleUpdate;

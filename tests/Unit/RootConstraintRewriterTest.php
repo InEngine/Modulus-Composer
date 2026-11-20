@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Unit coverage for {@see \InEngine\ModulusComposer\Composer\RootConstraintRewriter}.
+ * Unit coverage for {@see RootConstraintRewriter}.
  */
 
 use InEngine\Modulus\Upgrades\UpgradeConstraintPolicy;

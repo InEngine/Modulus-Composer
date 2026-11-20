@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Unit coverage for edge cases of {@see \InEngine\ModulusComposer\Composer\ComposerModuleClient} (enable, version pinning, update-all, failures).
+ * Unit coverage for edge cases of {@see ComposerModuleClient} (enable, version pinning, update-all, failures).
  */
 
 use InEngine\Modulus\ModuleRepository;

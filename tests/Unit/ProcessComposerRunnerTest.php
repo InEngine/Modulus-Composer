@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Unit coverage for {@see \InEngine\ModulusComposer\Composer\ProcessComposerRunner}.
+ * Unit coverage for {@see ProcessComposerRunner}.
  */
 
 use Illuminate\Support\Facades\Process;

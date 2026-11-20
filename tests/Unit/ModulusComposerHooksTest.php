@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Unit coverage for {@see \InEngine\ModulusComposer\Hooks\ModulusComposerHooks}.
+ * Unit coverage for {@see ModulusComposerHooks}.
  */
 
 use InEngine\Modulus\ModuleRepository;
