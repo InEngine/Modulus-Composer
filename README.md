@@ -7,7 +7,7 @@
 
 It owns **require / remove / update**, host constraint rewrites (default `~x.y.z`), and the real `ModuleUpdateApplier` so `modulus:update --auto` can apply patches. Modulus core stays free of Composer shelling.
 
-**Not** a feature module — always-on when installed. Hosts (including InEngine Core) should **not** hard-require this package; opt in via Composer path / Packagist. Operator UI is **`modulus-ui` (private Pro)** — separate package.
+**Not** a feature module — always-on when installed. InEngine Core hard-requires this package from Packagist (`^0.1@beta`). Operator UI is **`modulus-ui` (private Pro)** — separate package.
 
 Docs live with Modulus: [Modulus Composer](https://github.com/InEngine/Modulus/blob/feat/modulus-state-store/docs/modulus-composer.md) · [docs/](https://github.com/InEngine/Modulus/tree/feat/modulus-state-store/docs).
 
@@ -39,21 +39,15 @@ Uses `modulus.upgrades.default_constraint` (default **patch** → `~x.y.z`). Min
 
 ## Local path (monorepo)
 
-Requires `inengine/modulus` `*@dev` until Packagist (then `^0.1`). For sibling path develop:
+Published require: `inengine/modulus` `^0.1@beta`. For sibling path develop:
 
 ```bash
 cp composer.local.dist.json composer.local.json   # gitignored; path + *@dev
 composer update inengine/modulus
 ```
 
-Hosts opting into this package via Core:
-
-```json
-{
-  "require": {
-    "inengine/modulus-composer": "^0.1"
-  }
-}
+```bash
+composer require inengine/modulus-composer:^0.1@beta
 ```
 
 Or `*@dev` with Core `composer.local.json` path repos under `../Modules/*`.

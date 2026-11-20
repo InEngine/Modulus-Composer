@@ -4,10 +4,17 @@ All notable changes to **Modulus Composer** (`inengine/modulus-composer`) will b
 
 ## Unreleased
 
+## 0.1.0-beta.1 - 2026-11-20
+
+### Added
+
+- First public beta on Packagist / GitHub Releases
+
 ### Changed
 
 - Relicense as MIT
-- Packagist-ready shape: path develop via gitignored `composer.local.json` (no path repos in published `composer.json`); require `inengine/modulus` `*@dev` until Packagist release
+- Packagist-ready shape: path develop via gitignored `composer.local.json` (no path repos in published `composer.json`)
+- Require `inengine/modulus` `^0.1@beta` (path `*@dev` only via `composer.local.json`)
 
 ### Step 10 (initial)
 
