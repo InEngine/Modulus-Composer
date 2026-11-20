@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Unit coverage for {@see \InEngine\ModulusComposer\Updates\ComposerModuleUpdateApplier}.
+ */
+
 use InEngine\Modulus\DataTransferObjects\AvailableModuleUpdate;
 use InEngine\Modulus\ModuleRepository;
 use InEngine\ModulusComposer\Composer\ComposerModuleClient;

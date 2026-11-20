@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Feature coverage for command registration and the approve/require `modulus-composer:*` Artisan commands.
+ */
+
 use Illuminate\Support\Facades\Artisan;
 use InEngine\Modulus\ModuleRepository;
 use InEngine\ModulusComposer\Composer\ComposerModuleClient;

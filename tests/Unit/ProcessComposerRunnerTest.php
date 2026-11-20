@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Unit coverage for {@see \InEngine\ModulusComposer\Composer\ProcessComposerRunner}.
+ */
+
 use Illuminate\Support\Facades\Process;
 use InEngine\ModulusComposer\Composer\ProcessComposerRunner;
 use InEngine\ModulusComposer\Exceptions\ComposerProcessFailedException;

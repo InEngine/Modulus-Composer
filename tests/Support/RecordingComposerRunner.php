@@ -5,6 +5,13 @@ namespace InEngine\ModulusComposer\Tests\Support;
 use InEngine\ModulusComposer\Contracts\ComposerProcessRunner;
 use InEngine\ModulusComposer\Exceptions\ComposerProcessFailedException;
 
+/**
+ * Test double for {@see ComposerProcessRunner}.
+ *
+ * Records each invocation's arguments in {@see $calls} instead of spawning Composer,
+ * returns a canned {@see $output}, and can simulate a failure for a specific
+ * argument list via {@see $failOn}.
+ */
 final class RecordingComposerRunner implements ComposerProcessRunner
 {
     /** @var list<list<string>> */

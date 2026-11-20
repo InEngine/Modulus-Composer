@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Unit coverage for {@see \InEngine\ModulusComposer\Composer\RootConstraintRewriter}.
+ */
+
 use InEngine\Modulus\Upgrades\UpgradeConstraintPolicy;
 use InEngine\ModulusComposer\Composer\RootConstraintRewriter;
 use InEngine\ModulusComposer\Exceptions\InvalidComposerJsonException;

@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Feature coverage for additional `modulus-composer:*` Artisan commands (remove, update --with-dependencies, require --enable).
+ */
+
 use InEngine\Modulus\ModuleRepository;
 use InEngine\ModulusComposer\Composer\ComposerModuleClient;
 use InEngine\ModulusComposer\Composer\RootConstraintRewriter;

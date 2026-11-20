@@ -6,8 +6,20 @@ use InEngine\Modulus\ModulusServiceProvider;
 use InEngine\ModulusComposer\ModulusComposerServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
+/**
+ * Base Orchestra Testbench case for the Modulus Composer package tests.
+ *
+ * Registers the Modulus and Modulus Composer service providers and isolates
+ * Modulus state in a unique temporary file per test run.
+ */
 class TestCase extends Orchestra
 {
+    /**
+     * Register the package service providers under test.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return list<class-string<\Illuminate\Support\ServiceProvider>>
+     */
     protected function getPackageProviders($app)
     {
         return [
@@ -16,6 +28,12 @@ class TestCase extends Orchestra
         ];
     }
 
+    /**
+     * Configure the testing environment: default database connection and
+     * a temporary Modulus state file with upgrade/update defaults for tests.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     */
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');

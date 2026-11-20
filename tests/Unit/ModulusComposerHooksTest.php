@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Unit coverage for {@see \InEngine\ModulusComposer\Hooks\ModulusComposerHooks}.
+ */
+
 use InEngine\Modulus\ModuleRepository;
 use InEngine\ModulusComposer\Hooks\ModulusComposerHooks;
 

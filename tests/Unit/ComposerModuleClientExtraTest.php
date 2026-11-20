@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Unit coverage for edge cases of {@see \InEngine\ModulusComposer\Composer\ComposerModuleClient} (enable, version pinning, update-all, failures).
+ */
+
 use InEngine\Modulus\ModuleRepository;
 use InEngine\ModulusComposer\Composer\ComposerModuleClient;
 use InEngine\ModulusComposer\Composer\RootConstraintRewriter;

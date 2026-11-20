@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Unit coverage for the core flows of {@see \InEngine\ModulusComposer\Composer\ComposerModuleClient} (require, remove, approve) and update-applier binding.
+ */
+
 use InEngine\Modulus\Contracts\ModuleUpdateApplier;
 use InEngine\Modulus\ModuleRepository;
 use InEngine\Modulus\Updates\NullModuleUpdateApplier;
