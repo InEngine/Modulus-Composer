@@ -6,6 +6,11 @@ use Illuminate\Support\Facades\Process;
 use InEngine\ModulusComposer\Contracts\ComposerProcessRunner;
 use InEngine\ModulusComposer\Exceptions\ComposerProcessFailedException;
 
+/**
+ * {@see ComposerProcessRunner} that shells out to the Composer binary via Laravel's Process facade.
+ *
+ * Appends non-interactive flags and throws {@see ComposerProcessFailedException} on non-zero exit.
+ */
 final class ProcessComposerRunner implements ComposerProcessRunner
 {
     /**
@@ -22,6 +27,9 @@ final class ProcessComposerRunner implements ComposerProcessRunner
         }
     }
 
+    /**
+     * Build a runner from the `modulus-composer` config (binary, working directory, timeout, flags).
+     */
     public static function fromConfig(): self
     {
         $flags = config('modulus-composer.non_interactive', ['--no-interaction', '--no-ansi']);

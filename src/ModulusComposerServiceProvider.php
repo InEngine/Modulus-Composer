@@ -27,6 +27,9 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
  */
 class ModulusComposerServiceProvider extends PackageServiceProvider
 {
+    /**
+     * Name the package, publish its config, and register the Composer commands.
+     */
     public function configurePackage(Package $package): void
     {
         $package

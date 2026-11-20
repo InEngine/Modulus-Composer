@@ -18,6 +18,7 @@ class RequireModuleCommand extends Command
 
     protected $description = 'Composer require a module, discover + publish (disabled unless --enable)';
 
+    /** Execute the console command. */
     public function handle(ComposerModuleClient $client): int
     {
         $package = (string) $this->argument('package');

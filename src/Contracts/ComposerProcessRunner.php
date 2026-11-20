@@ -4,6 +4,11 @@ namespace InEngine\ModulusComposer\Contracts;
 
 use InEngine\ModulusComposer\Exceptions\ComposerProcessFailedException;
 
+/**
+ * Runs Composer CLI commands for the host application.
+ *
+ * Bound to {@see \InEngine\ModulusComposer\Composer\ProcessComposerRunner} by default.
+ */
 interface ComposerProcessRunner
 {
     /**

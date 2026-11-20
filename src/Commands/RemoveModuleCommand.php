@@ -14,6 +14,7 @@ class RemoveModuleCommand extends Command
 
     protected $description = 'Forget from Modulus state, then composer remove (non-destructive of DB)';
 
+    /** Execute the console command. */
     public function handle(ComposerModuleClient $client): int
     {
         $package = (string) $this->argument('package');

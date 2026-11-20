@@ -19,6 +19,11 @@ final class RootConstraintRewriter
         }
     }
 
+    /**
+     * Build a rewriter for the configured working directory's composer.json.
+     *
+     * @param  UpgradeConstraintPolicy|null  $policy  Defaults to `modulus.upgrades.default_constraint`
+     */
     public static function fromConfig(?UpgradeConstraintPolicy $policy = null): self
     {
         $cwd = config('modulus-composer.working_directory', '');
@@ -32,6 +37,11 @@ final class RootConstraintRewriter
         );
     }
 
+    /**
+     * Current `require` constraint for the package.
+     *
+     * @return string|null Null when the package is not required
+     */
     public function get(string $package): ?string
     {
         $require = $this->read()['require'] ?? [];

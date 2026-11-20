@@ -15,6 +15,7 @@ class UpdateModuleCommand extends Command
 
     protected $description = 'Composer update module(s), then Modulus upgrade/publish hooks';
 
+    /** Execute the console command. */
     public function handle(ComposerModuleClient $client): int
     {
         $package = $this->argument('package');

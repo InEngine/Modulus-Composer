@@ -143,11 +143,19 @@ final class ComposerModuleClient
         return $applied;
     }
 
+    /**
+     * Canonicalize a Composer package name (trimmed, lowercase).
+     */
     protected function normalizePackage(string $package): string
     {
         return strtolower(trim($package));
     }
 
+    /**
+     * Installed version of the package from Composer metadata, without a leading `v`.
+     *
+     * @return string|null Null when Composer metadata is unavailable or the package is not installed
+     */
     protected function installedPrettyVersion(string $package): ?string
     {
         if (! class_exists(InstalledVersions::class) || ! InstalledVersions::isInstalled($package)) {

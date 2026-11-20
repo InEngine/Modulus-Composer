@@ -4,6 +4,11 @@ namespace InEngine\ModulusComposer\Exceptions;
 
 use RuntimeException;
 
+/**
+ * Thrown when a Composer subprocess exits non-zero.
+ *
+ * Exposes the command, exit code, and captured output; the message prefers stderr over stdout.
+ */
 final class ComposerProcessFailedException extends RuntimeException
 {
     /**

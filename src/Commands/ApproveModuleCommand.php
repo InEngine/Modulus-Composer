@@ -15,6 +15,7 @@ class ApproveModuleCommand extends Command
 
     protected $description = 'Rewrite host constraint (~x.y.z policy), composer update, Modulus upgrade';
 
+    /** Execute the console command. */
     public function handle(ComposerModuleClient $client): int
     {
         $package = (string) $this->argument('package');
