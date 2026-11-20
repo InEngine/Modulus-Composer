@@ -4,6 +4,12 @@ All notable changes to **Modulus Composer** (`inengine/modulus-composer`) will b
 
 ## Unreleased
 
+## 0.1.0-beta.2 - 2026-11-20
+
+### Changed
+
+- Require `inengine/modulus` `^0.1@beta || *@dev` so Packagist CI and local path develops both resolve
+
 ## 0.1.0-beta.1 - 2026-11-20
 
 ### Added
