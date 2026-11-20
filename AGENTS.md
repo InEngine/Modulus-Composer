@@ -58,3 +58,7 @@ Composer client for Modulus-compatible modules.
 - Pest, PHPStan, Pint. PHPDoc over inline comments.
 
 </laravel-boost-guidelines>
+
+## Git
+
+- Work on **`dev`**; open a PR into **`main`**. See InEngine Documentation `Git workflow.md`.
