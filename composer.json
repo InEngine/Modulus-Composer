@@ -19,7 +19,7 @@
     "require": {
         "php": "^8.5",
         "illuminate/contracts": "^12.0||^13.0",
-        "inengine/modulus": "^0.1@beta",
+        "inengine/modulus": "^0.1@beta || *@dev",
         "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
@@ -63,6 +63,9 @@
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        },
         "laravel": {
             "providers": [
                 "InEngine\\ModulusComposer\\ModulusComposerServiceProvider"
@@ -71,7 +74,8 @@
         "merge-plugin": {
             "include": [
                 "composer.local.json"
-            ]
+            ],
+            "replace": true
         }
     },
     "minimum-stability": "dev",
